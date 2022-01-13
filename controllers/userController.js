@@ -29,7 +29,7 @@ module.exports = {
   },
 
   // updateUser by id
-  update(req, res) {
+  updateUser(req, res) {
     User.findOneAndUpdate(
       { _id: req.params.userId },
       { $set: req.body },
